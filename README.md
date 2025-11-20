@@ -2,7 +2,7 @@
 Este projeto é uma API completa de gerenciamento de listas de tarefas, desenvolvida com Spring Boot, seguindo boas práticas de arquitetura, segurança e modularização.
 O sistema permite que usuários se registrem, façam login, criem listas de tarefas, gerenciem tarefas individualmente, acompanhem progresso e acessem seus dados de forma segura via JWT.
 
-🚀 Tecnologias Utilizadas
+  🚀 Tecnologias Utilizadas
 
 - Java 21
 
@@ -22,7 +22,7 @@ O sistema permite que usuários se registrem, façam login, criem listas de tare
 
 - Testes Unitários com JUnit + Mockito
 
-- 🔐 Autenticação e Autorização
+  🔐 Autenticação e Autorização
 
 - A API utiliza JWT (JSON Web Token) para autenticação:
 
@@ -39,22 +39,9 @@ A autorização é baseada em scopes, como:
 
 - SCOPE_admin
 
-📚 Estrutura do Projeto
-src/main/java/app/taskmanager
-│
-├── config/            # Configurações (Security, JWT, AdminUser default)
-├── controller/        # Controllers REST
-│   ├── dto/           # DTOs utilizados nas requisições/respostas
-│   └── ...            # Exception Handler, TokenController etc
-│
-├── entities/          # Entidades do JPA (User, TaskList, Task, Role)
-├── mappers/           # Mappers entre entidade <-> DTO
-├── repositories/      # Interfaces do Spring Data
-├── service/           # Interfaces de serviços
-│   └── impl/          # Implementações contendo regras de negócio
-└── ...
 
-📌 Principais Funcionalidades
+
+  📌 Principais Funcionalidades
 👤 Usuário
 
 = Criar conta
@@ -63,7 +50,7 @@ src/main/java/app/taskmanager
 
 - Receber JWT com o scope configurado
 
-📝 Listas de Tarefas
+  📝 Listas de Tarefas
 
 - Criar uma lista
 
@@ -73,7 +60,7 @@ src/main/java/app/taskmanager
 
 - Excluir
 
-✔️ Tarefas
+  ✔️ Tarefas
 
 - Criar tarefa ligada a uma lista
 
@@ -83,7 +70,7 @@ src/main/java/app/taskmanager
 
 - Deletar
 
-🧪 Testes Unitários
+  🧪 Testes Unitários
 
 O projeto contém testes baseados no padrão AAA (Arrange, Act, Assert):
 
