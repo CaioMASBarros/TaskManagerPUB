@@ -4,45 +4,40 @@ O sistema permite que usuários se registrem, façam login, criem listas de tare
 
 🚀 Tecnologias Utilizadas
 
-Java 17+
+- Java 21
 
-Spring Boot 3
+- Spring Boot 3
 
-Spring Security 6 (JWT)
+- Spring Security 6 (JWT)
 
-Spring Web
+- Spring Web
 
-Spring Data JPA
+- Spring Data JPA
 
-MySQL
+- MySQL
 
-Lombok
+- Mappers (interfaces + implementação)
 
-Mappers (interfaces + implementação)
+- Arquitetura em camadas (Controller → Service → Repository)
 
-Arquitetura em camadas (Controller → Service → Repository)
+- Testes Unitários com JUnit + Mockito
 
-Tratamento global de erros
+- 🔐 Autenticação e Autorização
 
+- A API utiliza JWT (JSON Web Token) para autenticação:
 
-Testes Unitários com JUnit + Mockito
+- Endpoint /login gera o token.
 
-🔐 Autenticação e Autorização
+- Rotas protegidas exigem o header:
 
-A API utiliza JWT (JSON Web Token) para autenticação:
-
-Endpoint /login gera o token.
-
-Rotas protegidas exigem o header:
-
-Authorization: Bearer <token>
+- Authorization: Bearer <token>
 
 
 A autorização é baseada em scopes, como:
 
-SCOPE_basic
+- SCOPE_basic
 
-SCOPE_admin
+- SCOPE_admin
 
 📚 Estrutura do Projeto
 src/main/java/app/taskmanager
@@ -62,42 +57,41 @@ src/main/java/app/taskmanager
 📌 Principais Funcionalidades
 👤 Usuário
 
-Criar conta
+= Criar conta
 
-Fazer login
+- Fazer login
 
-Receber JWT com o scope configurado
+- Receber JWT com o scope configurado
 
 📝 Listas de Tarefas
 
-Criar uma lista
+- Criar uma lista
 
-Buscar todas as listas
+- Buscar todas as listas
 
-Buscar por ID
+- Buscar por ID
 
-Excluir
+- Excluir
 
 ✔️ Tarefas
 
-Criar tarefa ligada a uma lista
+- Criar tarefa ligada a uma lista
 
-Atualizar tarefa (status, título, descrição)
+- Atualizar tarefa (status, título, descrição)
 
-Marcar como concluída
+- Marcar como concluída
 
-Deletar
+- Deletar
 
 🧪 Testes Unitários
 
 O projeto contém testes baseados no padrão AAA (Arrange, Act, Assert):
 
-Mock do repositório (Mockito)
+- Mock do repositório (Mockito)
 
-Testes de serviço isolados
+- Testes de serviço isolados
 
-Testes de falhas em banco
+- Testes de falhas em banco
 
-Testes de exceções
+- Testes de exceções
 
-Testes de repositório opcionais
