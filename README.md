@@ -1,5 +1,3 @@
-✅ MODELO COMPLETO DE README.md (para colocar no GitHub)
-📝 TaskManager API — Lista de Tarefas com Autenticação JWT
 
 Este projeto é uma API completa de gerenciamento de listas de tarefas, desenvolvida com Spring Boot, seguindo boas práticas de arquitetura, segurança e modularização.
 O sistema permite que usuários se registrem, façam login, criem listas de tarefas, gerenciem tarefas individualmente, acompanhem progresso e acessem seus dados de forma segura via JWT.
